@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-barlow), sans-serif;
+  }
+  .font-body {
+    font-family: var(--font-inter), sans-serif;
+  }
+}
